@@ -21,8 +21,8 @@ def analyze_sentiment():
         # Determine sentiment based on polarity
         positive_confidence = (polarity + 1) / 2
         negative_confidence = 1 - positive_confidence
-        results = "Positive: " + str(positive_confidence) + "Negative: " + str(negative_confidence)
-        
+        results = "Positive: " + str(positive_confidence) + "  Negative: " + str(negative_confidence)
+
         return jsonify({"results": results}), 200
 
     except Exception as e:
